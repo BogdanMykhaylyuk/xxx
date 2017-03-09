@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form</title>
+<meta charset="utf-8">
+
+</head>
+	<body>
+
+		<h1>Форма</h1>
+		<fieldset>
+		<legend align="center">Заповніть форму!</legend>
+			<form action="#" method="post">
+				<p><label for="login1">Логін</label> <input type="text" name="login"  size="25" maxlength="30" id="login1"></p>
+			<p><label for="password1">Пароль</label> <input type="password" name="password" id="password1"></p>	
+			<p>Оцініть наш сайт(type="radio")</p>
+			<label><input type="radio" name="evaluation" value="excellent">Бездоганно</label><br>	
+			<label><input type="radio" name="evaluation" value="good" checked="checked">Добре</label><br>	
+			<label><input type="radio" name="evaluation" value="badly">Погано</label><br>
+			<p>Як ви проводите вільний час(type="Checkbox")</p>
+			<label><input type="checkbox" name="liisure[]" value="read"></label>Читаю книгу<br>
+			<label><input type="checkbox" name="liisure[]" value="watch">Дивлюсь ТБ</label><br>
+			<label><input type="checkbox" name="liisure[]" value="listen">Слухаю музику</label><br>
+			<label><input type="checkbox" name="liisure[]" value="walk" checked="checked">Гуляю з друзями</label><br>
+			<p><label for="musicstyles">Які стилі музики ви слухаєте?</label></p>
+			<select name="music styles[]" multiple="multiple" size="3" id="musicstyles">
+				<option value="1">Pop</option>
+				<option value="2">Rock</option>
+				<option value="3">Jazz</option>
+				<option value="4">Blues</option>
+			</select>
+			<p><label for="textarea">Ваші інтереси</label></p>
+			<textarea name="interest" rows="4" cols="30" id="textarea">текст...</textarea><br> 
+			<input type="image" name="send" src="images/send_btn.png">
+			</fieldset>	
+			</form>
+		
+	</body>
+</html>
